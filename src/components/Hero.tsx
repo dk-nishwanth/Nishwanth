@@ -56,8 +56,8 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.2 }}
-            href="/src/Nishwanth resume.pdf" 
-            download="Nishwanth_Resume.pdf"
+            href="/src/Nishwanth-DK-Resume.pdf" 
+            download="Nishwanth-DK-Resume.pdf"
             className="w-full px-6 py-3 bg-shift-black text-white rounded-full font-mono text-xs uppercase tracking-widest hover:scale-105 transition-transform active:scale-95 text-center"
           >
             Download Resume
