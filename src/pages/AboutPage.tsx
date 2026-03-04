@@ -71,7 +71,7 @@ export default function AboutPage() {
         >
           <h2 className="text-3xl lg:text-4xl font-bold tracking-tighter mb-6 lg:mb-8">The Tools</h2>
           <div className="flex flex-wrap gap-2">
-            {["React", "Unreal Engine 5", "UiPath", "Figma", "AutoCAD", "SketchUp"].map((tool, i) => (
+            {["React", "Unreal Engine 5", "UiPath", "Figma", "AutoCAD", "SketchUp","Revit architecture","Adobe Photoshop","Adobe After Effects"," Unity","AI Tools "].map((tool, i) => (
               <motion.span 
                 key={tool}
                 initial={{ opacity: 0, scale: 0.8 }}
