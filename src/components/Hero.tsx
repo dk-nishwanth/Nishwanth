@@ -62,7 +62,7 @@ export default function Hero() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 1.2 }}
-            href="/src/Nishwanth-DK-Resume.pdf" 
+            href="/Nishwanth-DK-Resume.pdf" 
             download="Nishwanth-DK-Resume.pdf"
             className="w-full px-6 py-3 bg-shift-black text-white rounded-full font-mono text-xs uppercase tracking-widest hover:scale-105 transition-transform active:scale-95 text-center"
           >
@@ -207,8 +207,8 @@ export default function Hero() {
                 Computer Science undergraduate passionate about UI/UX design, game design, and automation. Skilled in Unreal Engine 5, front-end development, and process automation tools like UiPath. Creative thinker with experience in architectural design.
               </p>
               <a 
-                href="/src/Nishwanth resume.pdf" 
-                download="Nishwanth_Resume.pdf"
+                href="/Nishwanth-DK-Resume.pdf" 
+                download="Nishwanth-DK-Resume.pdf"
                 className="px-8 py-4 bg-shift-black text-white rounded-full font-mono text-xs uppercase tracking-widest hover:scale-105 transition-transform active:scale-95 whitespace-nowrap"
               >
                 Download Resume
