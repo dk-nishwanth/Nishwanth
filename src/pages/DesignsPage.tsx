@@ -4,7 +4,8 @@ export default function DesignsPage() {
   const designs = [
     { 
       title: "Electric Go", 
-      cat: "App UI/UX", 
+      cat: "Mobile App Design", 
+      desc: "Electric rental vehicle booking app design with modern UI/UX focusing on sustainability and user experience",
       img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&h=1600&fit=crop&q=80", 
       span: "row-span-2",
       link: "https://www.behance.net/gallery/212573331/Electric-Go-%28-Electric-rental-vehicle-booking-app%29"
@@ -12,6 +13,7 @@ export default function DesignsPage() {
     { 
       title: "Poster Designs", 
       cat: "Graphic Design", 
+      desc: "Creative poster designs for various events and campaigns with striking visual appeal",
       img: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&h=800&fit=crop&q=80", 
       span: "col-span-2",
       link: "https://www.behance.net/gallery/212025573/Poster-Design"
@@ -19,13 +21,15 @@ export default function DesignsPage() {
     { 
       title: "Mall Landing Page", 
       cat: "Web Design", 
+      desc: "Modern and attractive landing page design for shopping mall with interactive elements",
       img: "https://images.unsplash.com/photo-1567521464027-f127ff144326?w=800&h=1200&fit=crop&q=80", 
       span: "",
       link: "https://www.behance.net/gallery/211960287/Landing-Page-for-Mall"
     },
     { 
       title: "Resort Suggestion App", 
-      cat: "Mobile UI", 
+      cat: "Mobile App Design", 
+      desc: "Travel app design for resort recommendations with beautiful UI and smooth user journey",
       img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=1200&fit=crop&q=80", 
       span: "col-span-2",
       link: "https://www.behance.net/gallery/209151259/Resort-Suggestion-App"
@@ -33,17 +37,11 @@ export default function DesignsPage() {
     { 
       title: "Food Website Landing", 
       cat: "Web Design", 
+      desc: "Appetizing landing page design for food website with mouth-watering visuals",
       img: "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=800&h=800&fit=crop&q=80", 
       span: "",
       link: "https://www.behance.net/gallery/208369221/Landing-page-for-Foodwebsite"
-    },
-    { 
-      title: "Full Portfolio", 
-      cat: "Behance", 
-      img: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&h=800&fit=crop&q=80", 
-      span: "col-span-2",
-      link: "https://www.behance.net/dknishwanth"
-    },
+    }
   ];
 
   return (
@@ -82,8 +80,8 @@ export default function DesignsPage() {
               referrerPolicy="no-referrer"
             />
             
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-shift-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-8 lg:p-12">
+            {/* Overlay - Always Visible */}
+            <div className="absolute inset-0 bg-gradient-to-t from-shift-black via-shift-black/40 to-transparent flex flex-col justify-end p-8 lg:p-12">
               <div className="overflow-hidden">
                 <motion.p 
                   initial={{ y: 20 }}
@@ -97,11 +95,22 @@ export default function DesignsPage() {
                 <motion.h3 
                   initial={{ y: 40 }}
                   whileInView={{ y: 0 }}
-                  className="text-2xl lg:text-4xl font-bold text-white tracking-tighter"
+                  className="text-2xl lg:text-4xl font-bold text-white tracking-tighter mb-3"
                 >
                   {design.title}
                 </motion.h3>
               </div>
+              {design.desc && (
+                <div className="overflow-hidden">
+                  <motion.p 
+                    initial={{ y: 40 }}
+                    whileInView={{ y: 0 }}
+                    className="text-white/80 text-xs lg:text-sm leading-relaxed max-w-sm"
+                  >
+                    {design.desc}
+                  </motion.p>
+                </div>
+              )}
             </div>
 
             {/* Corner Icon */}
